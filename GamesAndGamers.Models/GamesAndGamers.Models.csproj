@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\FavoriteGames\Responses\" />
+    <Folder Include="Dtos\FavoriteGames\Requests\" />
+    <Folder Include="Dtos\Games\Responses\" />
+    <Folder Include="Dtos\Games\Requests\" />
+    <Folder Include="Dtos\Genres\Responses\" />
+    <Folder Include="Dtos\Genres\Requests\" />
+    <Folder Include="Dtos\Users\Responses\" />
+    <Folder Include="Dtos\Users\Requests\" />
+    <Folder Include="Dtos\Wishlists\Responses\" />
+    <Folder Include="Dtos\Wishlists\Requests\" />
+  </ItemGroup>
+
+</Project>
