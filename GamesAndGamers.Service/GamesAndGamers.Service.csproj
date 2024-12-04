@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GamesAndGamers.Models\GamesAndGamers.Models.csproj" />
+    <ProjectReference Include="..\GamesAndGamers.Repository\GamesAndGamers.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -13,10 +13,6 @@
   <ItemGroup>
     <Folder Include="Dtos\FavoriteGames\Responses\" />
     <Folder Include="Dtos\FavoriteGames\Requests\" />
-    <Folder Include="Dtos\Games\Responses\" />
-    <Folder Include="Dtos\Games\Requests\" />
-    <Folder Include="Dtos\Genres\Responses\" />
-    <Folder Include="Dtos\Genres\Requests\" />
     <Folder Include="Dtos\Users\Responses\" />
     <Folder Include="Dtos\Users\Requests\" />
     <Folder Include="Dtos\Wishlists\Responses\" />
