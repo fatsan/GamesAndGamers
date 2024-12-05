@@ -36,19 +36,36 @@ public sealed class GameService : IGameService
         };     
     }
 
-    public ReturnModel<GameResponseDto> Delete(int id)
+    public ReturnModel<GameResponseDto> Delete(Guid id)
     {
         throw new NotImplementedException();
     }
 
     public ReturnModel<List<GameResponseDto>> GetAll()
     {
-        throw new NotImplementedException();
+        List<Game> list = _gameRepository.GetAll();
+        List<GameResponseDto> responses = _mapper.Map<List<GameResponseDto>>(list);
+        return new ReturnModel<List<GameResponseDto>>
+        {
+            Data = responses,
+            Message = string.Empty,
+            Status = 200,
+            Success = true
+        };
     }
 
-    public ReturnModel<List<GameResponseDto>> GetById(int id)
+    public ReturnModel<GameResponseDto> GetById(Guid id)
     {
-        throw new NotImplementedException();
+        var game = _gameRepository.GetById(id);
+        var response = _mapper.Map<GameResponseDto>(game);
+        return new ReturnModel<GameResponseDto>
+        {
+            Data = response,
+            Message = "This is the Game that you looking for...",
+            Status = 200,
+            Success = true
+        };
+
     }
 
     public ReturnModel<GameResponseDto> Update(UpdateGameRequest dto)
